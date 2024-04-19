@@ -14,6 +14,10 @@ This is a simple REST API for managing users, built with Go, Gorilla Mux, and GO
 - GORM v1.25.9
 - GORM MySQL Driver v1.5.6
 
+## Database
+1. Install MySQL database
+2. Create database userdb
+
 ## Setup
 
 1. Clone the repository:
@@ -33,14 +37,18 @@ go mod download
 
 4. Setup environment file
 ```
-DB_HOST=localhost
-DB_PORT=3306
-DB_USER=root
-DB_PASSWORD=yourpassword
-DB_NAME=user_management
+DB_USER=admin
+DB_PASSWORD=password
+DB_HOST=localhost:3306
+DB_NAME=usersdb
 ```
 
 5. Run the application
 ```
 go run main.go
 ```
+
+6. Open db.sql and insert the initial user data to mysql database.
+
+7. Play around with the request using the collection thunder-collection_sample-project
+you can import it to your desired rest client tool.

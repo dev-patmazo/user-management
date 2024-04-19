@@ -1,0 +1,81 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "sample-project",
+    "dateExported": "2024-04-19T21:17:31.751Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "e0d22131-bf1a-46c5-ac05-b24c69d3e5fa",
+            "colId": "fac6cc8f-95a1-451f-a2da-b7550c93695e",
+            "containerId": "",
+            "name": "CreateUser",
+            "url": "localhost:8080/users",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-19T17:11:54.494Z",
+            "modified": "2024-04-19T20:11:11.613Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\" : \"test\",\n  \"email\" : \"test@gmail.com\",\n  \"age\" : 30,\n  \"role\" : \"admin\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "dope",
+                    "password": "hopetogetthisjob"
+                }
+            }
+        },
+        {
+            "_id": "24650596-8baa-4229-8364-04fa13454dd6",
+            "colId": "fac6cc8f-95a1-451f-a2da-b7550c93695e",
+            "containerId": "",
+            "name": "GetUser",
+            "url": "localhost:8080/users/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-04-19T17:38:52.434Z",
+            "modified": "2024-04-19T20:01:20.601Z",
+            "headers": [],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "admin",
+                    "password": "admin"
+                }
+            }
+        },
+        {
+            "_id": "c839de97-baff-43f2-b0a5-7304797751ef",
+            "colId": "fac6cc8f-95a1-451f-a2da-b7550c93695e",
+            "containerId": "",
+            "name": "UpdateUser",
+            "url": "localhost:8080/users/1",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-04-19T17:54:58.214Z",
+            "modified": "2024-04-19T17:56:05.717Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\" : \"admin1\",\n  \"email\" : \"admin1@gmail.com\",\n  \"age\" : 21\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "8964d4f4-3247-4f8a-90e0-63feab8575c7",
+            "colId": "fac6cc8f-95a1-451f-a2da-b7550c93695e",
+            "containerId": "",
+            "name": "DeleteUser",
+            "url": "localhost:8080/users/3",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-04-19T18:02:36.032Z",
+            "modified": "2024-04-19T18:03:02.331Z",
+            "headers": []
+        }
+    ]
+}
