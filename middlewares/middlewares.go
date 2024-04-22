@@ -83,8 +83,8 @@ func checkRouteRoles(role string, route string, method string) bool {
 				"/users",
 				"/users/{id}",
 			},
-			"POST": []string{
-				"/users",
+			"PUT": []string{
+				"/users/{id}",
 			},
 		},
 		"viewer": {

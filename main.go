@@ -5,6 +5,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"time"
 
 	"github.com/dev-patmazo/user-management/controllers"
 	"github.com/dev-patmazo/user-management/middlewares"
@@ -37,6 +38,14 @@ func init() {
 	if err != nil {
 		panic("failed to connect database")
 	}
+
+	sqlDB, err := models.DbClient.DB()
+	if err != nil {
+		panic("failed to connect database")
+	}
+	sqlDB.SetConnMaxIdleTime(10)
+	sqlDB.SetConnMaxLifetime(100)
+	sqlDB.SetConnMaxLifetime(time.Hour)
 
 	models.DbClient.AutoMigrate(&models.User{})
 	log.Println("Database connected successfully.")
